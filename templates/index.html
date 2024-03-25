@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Text Editor</title>
+</head>
+<body>
+    <textarea id="editor" rows="10" cols="50"></textarea>
+
+    <script>
+        const editor = document.getElementById('editor');
+
+        editor.addEventListener('input', function() {
+            // Handle user input here
+            // You can send this content to the server or perform any other action
+            console.log(editor.value);
+        });
+    </script>
+</body>
+</html>

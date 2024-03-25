@@ -1,0 +1,11 @@
+Log-in and Log-out Status
+	logging-in and clocked-in
+
+
+
+Today’s task:
+1. solved gfg practice questions
+2. worked on python assignment
+3. watched tutorials on flask
+
+Logging out and clocked out
