@@ -6,15 +6,25 @@
     <title>Simple Text Editor</title>
 </head>
 <body>
-    <textarea id="editor" rows="10" cols="50"></textarea>
+    <form id="editorForm" action="/save" method="post">
+        <textarea id="editor" name="content" rows="10" cols="50"></textarea>
+        <input type="submit" value="Save">
+    </form>
 
     <script>
         const editor = document.getElementById('editor');
+        const form = document.getElementById('editorForm');
 
         editor.addEventListener('input', function() {
             // Handle user input here
             // You can send this content to the server or perform any other action
             console.log(editor.value);
+        });
+
+        form.addEventListener('submit', function(event) {
+            // Automatically commit changes when the form is submitted (text is saved)
+            console.log("Changes are being committed...");
+            // You may want to add additional logic or validation here
         });
     </script>
 </body>
